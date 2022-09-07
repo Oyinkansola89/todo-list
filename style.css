@@ -1,0 +1,85 @@
+h1 {
+  text-align: center;
+  background-color: black;
+  padding: 50px;
+  color: whitesmoke;
+  margin-bottom: 0%;
+  margin-top: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: white;
+  width: 600px;
+  height: 55px;
+  display: flex;
+}
+
+form input {
+  flex: 1;
+  border: none;
+}
+
+form button {
+  background: tomato;
+  padding: 10px 50px;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#myUL {
+  list-style: none;
+  padding-left: 0%;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.code {
+  padding-bottom: 20px;
+  background-color: gainsboro;
+  width: auto;
+}
+
+.bills {
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+  width: auto;
+}
+
+.tade {
+  padding-bottom: 20px;
+  background-color: gainsboro;
+  width: auto;
+}
+.groceries {
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+  width: auto;
+}
+.laundry {
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+  width: auto;
+}
+.movie {
+  padding-bottom: 20px;
+  background-color: gainsboro;
+  width: auto;
+}
+
+li:hover {
+  background-color: rgb(189, 184, 184);
+  cursor: pointer;
+  transition: 0.2s;
+}
