@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>
-      My To Do List
-      <div class="container">
+    <div id="myDIV" class="header">
+      <h1>
+        My To Do List
         <form>
           <input
             autocomplete="off"
@@ -19,21 +19,22 @@
             id="myInput"
             placeholder="Title..."
           />
-          <button type="submit" id="button">Add</button>
+          <button onclick="createNewList()" type="submit" id="button">
+            Add
+          </button>
         </form>
-      </div>
-    </h1>
-    <div class="containertwo">
-      <ul id="myUL">
-        <li class="code">Code</li>
-        <li class="bills">Meditate</li>
-        <li class="tade">Pick up Kids from nursery</li>
-        <li class="groceries">Buy groceries</li>
-        <li class="code">Audiobook</li>
-        <li class="laundry">Laundry</li>
-        <li class="movie">Watch a movie</li>
-      </ul>
+      </h1>
     </div>
+
+    <ul id="myUL">
+      <li class="checked">Code</li>
+      <li>Meditate</li>
+      <li>Pick up Kids from nursery</li>
+      <li>Buy groceries</li>
+      <li>Audiobook</li>
+      <li>Laundry</li>
+      <li>Watch a movie</li>
+    </ul>
   </body>
-  <script src="index.js"></script>
+  <script type="module" src="./src/index.js"></script>
 </html>

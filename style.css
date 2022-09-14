@@ -1,18 +1,12 @@
-h1 {
+.header {
   text-align: center;
   background-color: black;
-  padding: 50px;
   color: whitesmoke;
-  margin-bottom: 0%;
-  margin-top: 0;
-}
-
-.container {
-  height: 100%;
-  width: 100%;
+  margin: 20px 40px;
+  padding: 30px 40px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 form {
@@ -25,6 +19,8 @@ form {
 form input {
   flex: 1;
   border: none;
+  margin-right: 0;
+  justify-content: center;
 }
 
 form button {
@@ -37,49 +33,43 @@ form button {
   cursor: pointer;
 }
 
-#myUL {
-  list-style: none;
-  padding-left: 0%;
-  font-weight: bold;
+ul {
   margin: 0;
   padding: 0;
 }
 
-.code {
+ul li {
+  list-style: none;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
   padding-bottom: 20px;
-  background-color: gainsboro;
+  padding-left: 40px;
   width: auto;
-}
-
-.bills {
-  padding-bottom: 20px;
-  background-color: whitesmoke;
-  width: auto;
-}
-
-.tade {
-  padding-bottom: 20px;
-  background-color: gainsboro;
-  width: auto;
-}
-.groceries {
-  padding-bottom: 20px;
-  background-color: whitesmoke;
-  width: auto;
-}
-.laundry {
-  padding-bottom: 20px;
-  background-color: whitesmoke;
-  width: auto;
-}
-.movie {
-  padding-bottom: 20px;
-  background-color: gainsboro;
-  width: auto;
-}
-
-li:hover {
-  background-color: rgb(189, 184, 184);
   cursor: pointer;
   transition: 0.2s;
+}
+
+ul li.checked::before {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+ul li:nth-child(odd) {
+  background: whitesmoke;
+}
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li:hover {
+  background-color: rgb(189, 184, 184);
 }
